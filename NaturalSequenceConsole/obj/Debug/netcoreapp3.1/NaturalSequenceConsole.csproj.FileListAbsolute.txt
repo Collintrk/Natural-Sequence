@@ -1,0 +1,15 @@
+/Users/collintorok/Projects/NaturalSequenceConsole/NaturalSequenceConsole/bin/Debug/netcoreapp3.1/NaturalSequenceConsole.deps.json
+/Users/collintorok/Projects/NaturalSequenceConsole/NaturalSequenceConsole/bin/Debug/netcoreapp3.1/NaturalSequenceConsole.runtimeconfig.json
+/Users/collintorok/Projects/NaturalSequenceConsole/NaturalSequenceConsole/bin/Debug/netcoreapp3.1/NaturalSequenceConsole.runtimeconfig.dev.json
+/Users/collintorok/Projects/NaturalSequenceConsole/NaturalSequenceConsole/bin/Debug/netcoreapp3.1/NaturalSequenceConsole.dll
+/Users/collintorok/Projects/NaturalSequenceConsole/NaturalSequenceConsole/bin/Debug/netcoreapp3.1/NaturalSequenceConsole.pdb
+/Users/collintorok/Projects/NaturalSequenceConsole/NaturalSequenceConsole/bin/Debug/netcoreapp3.1/BoardModel.dll
+/Users/collintorok/Projects/NaturalSequenceConsole/NaturalSequenceConsole/bin/Debug/netcoreapp3.1/BoardModel.pdb
+/Users/collintorok/Projects/NaturalSequenceConsole/NaturalSequenceConsole/obj/Debug/netcoreapp3.1/NaturalSequenceConsole.csproj.AssemblyReference.cache
+/Users/collintorok/Projects/NaturalSequenceConsole/NaturalSequenceConsole/obj/Debug/netcoreapp3.1/NaturalSequenceConsole.AssemblyInfoInputs.cache
+/Users/collintorok/Projects/NaturalSequenceConsole/NaturalSequenceConsole/obj/Debug/netcoreapp3.1/NaturalSequenceConsole.AssemblyInfo.cs
+/Users/collintorok/Projects/NaturalSequenceConsole/NaturalSequenceConsole/obj/Debug/netcoreapp3.1/NaturalSequenceConsole.csproj.CoreCompileInputs.cache
+/Users/collintorok/Projects/NaturalSequenceConsole/NaturalSequenceConsole/obj/Debug/netcoreapp3.1/NaturalSequenceConsole.csproj.CopyComplete
+/Users/collintorok/Projects/NaturalSequenceConsole/NaturalSequenceConsole/obj/Debug/netcoreapp3.1/NaturalSequenceConsole.dll
+/Users/collintorok/Projects/NaturalSequenceConsole/NaturalSequenceConsole/obj/Debug/netcoreapp3.1/NaturalSequenceConsole.pdb
+/Users/collintorok/Projects/NaturalSequenceConsole/NaturalSequenceConsole/obj/Debug/netcoreapp3.1/NaturalSequenceConsole.genruntimeconfig.cache
