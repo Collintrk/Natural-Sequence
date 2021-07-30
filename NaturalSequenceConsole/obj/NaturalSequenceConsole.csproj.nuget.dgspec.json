@@ -1,0 +1,116 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/collintorok/Projects/NaturalSequenceConsole/NaturalSequenceConsole/NaturalSequenceConsole.csproj": {}
+  },
+  "projects": {
+    "/Users/collintorok/Projects/NaturalSequenceConsole/BoardModel/BoardModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/collintorok/Projects/NaturalSequenceConsole/BoardModel/BoardModel.csproj",
+        "projectName": "BoardModel",
+        "projectPath": "/Users/collintorok/Projects/NaturalSequenceConsole/BoardModel/BoardModel.csproj",
+        "packagesPath": "/Users/collintorok/.nuget/packages/",
+        "outputPath": "/Users/collintorok/Projects/NaturalSequenceConsole/BoardModel/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/collintorok/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/collintorok/Projects/NaturalSequenceConsole/NaturalSequenceConsole/NaturalSequenceConsole.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/collintorok/Projects/NaturalSequenceConsole/NaturalSequenceConsole/NaturalSequenceConsole.csproj",
+        "projectName": "NaturalSequenceConsole",
+        "projectPath": "/Users/collintorok/Projects/NaturalSequenceConsole/NaturalSequenceConsole/NaturalSequenceConsole.csproj",
+        "packagesPath": "/Users/collintorok/.nuget/packages/",
+        "outputPath": "/Users/collintorok/Projects/NaturalSequenceConsole/NaturalSequenceConsole/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/collintorok/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "/Users/collintorok/Projects/NaturalSequenceConsole/BoardModel/BoardModel.csproj": {
+                "projectPath": "/Users/collintorok/Projects/NaturalSequenceConsole/BoardModel/BoardModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

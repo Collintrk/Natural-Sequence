@@ -1,0 +1,9 @@
+/Users/collintorok/Projects/NaturalSequenceConsole/BoardModel/bin/Debug/netstandard2.1/BoardModel.deps.json
+/Users/collintorok/Projects/NaturalSequenceConsole/BoardModel/bin/Debug/netstandard2.1/BoardModel.dll
+/Users/collintorok/Projects/NaturalSequenceConsole/BoardModel/bin/Debug/netstandard2.1/BoardModel.pdb
+/Users/collintorok/Projects/NaturalSequenceConsole/BoardModel/obj/Debug/netstandard2.1/BoardModel.csproj.AssemblyReference.cache
+/Users/collintorok/Projects/NaturalSequenceConsole/BoardModel/obj/Debug/netstandard2.1/BoardModel.AssemblyInfoInputs.cache
+/Users/collintorok/Projects/NaturalSequenceConsole/BoardModel/obj/Debug/netstandard2.1/BoardModel.AssemblyInfo.cs
+/Users/collintorok/Projects/NaturalSequenceConsole/BoardModel/obj/Debug/netstandard2.1/BoardModel.csproj.CoreCompileInputs.cache
+/Users/collintorok/Projects/NaturalSequenceConsole/BoardModel/obj/Debug/netstandard2.1/BoardModel.dll
+/Users/collintorok/Projects/NaturalSequenceConsole/BoardModel/obj/Debug/netstandard2.1/BoardModel.pdb
