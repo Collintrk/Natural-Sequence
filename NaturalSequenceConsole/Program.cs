@@ -9,9 +9,9 @@ namespace NaturalSequenceConsole
 
         static void Main(string[] args)
         {
-            bool loop = true;
-            //Display empty board
-                displayBoard(b);
+            bool loop = true; https://github.com/Collintrk/Natural-Sequence.git
+                                    //Display empty board
+            displayBoard(b);
 
             while (loop)
             {
