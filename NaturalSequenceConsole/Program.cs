@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using BoardModel;
 
 namespace NaturalSequenceConsole
@@ -9,8 +9,8 @@ namespace NaturalSequenceConsole
 
         static void Main(string[] args)
         {
-            bool loop = true; https://github.com/Collintrk/Natural-Sequence.git
-                                    //Display empty board
+            bool loop = true;
+            //Display empty board
             displayBoard(b);
 
             while (loop)
@@ -19,7 +19,51 @@ namespace NaturalSequenceConsole
                 Console.WriteLine("Enter the piece");
                 String piece = Console.ReadLine();
 
-                Space currentSpace = SetCurrentSpace();
+                Console.WriteLine("Enter the row");
+                int currentRow = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Enter the column");
+                int currentCol = int.Parse(Console.ReadLine());
+
+                Space currentSpace = SetCurrentSpace(currentRow, currentCol);
+                currentSpace.Occupied = true;
+
+                //Calculate all legal moves
+                b.MarkLegalMoves(currentSpace, piece);
+
+                //print board again
+                displayBoard(b);
+
+                //move piece
+                Console.WriteLine("Enter row to move to:");
+                currentRow = int.Parse(Console.ReadLine());
+
+                Console.WriteLine("Enter column to move to:");
+                currentCol = int.Parse(Console.ReadLine());
+
+                bool valid = b.Grid[currentRow, currentCol].NextLegalMove;
+                while (!valid)
+                {
+                    Console.WriteLine("Enter a valid move");
+                    Console.WriteLine("Enter row to move to:");
+                    currentRow = int.Parse(Console.ReadLine());
+
+                    Console.WriteLine("Enter column to move to:");
+                    currentCol = int.Parse(Console.ReadLine());
+
+                    //if move is out of bounds, inform user
+                    if (currentRow < 1 || currentRow > 17 || currentCol < 1 || currentCol > 17)
+                    {
+                        Console.WriteLine("Enter a valid space");
+                    }
+                    //otherwise check if move is valid
+                    else
+                    {
+                        valid = b.Grid[currentRow, currentCol].NextLegalMove;
+                    }
+                }
+
+                currentSpace = SetCurrentSpace(currentRow, currentCol);
                 currentSpace.Occupied = true;
 
                 //Calculate all legal moves
@@ -29,32 +73,44 @@ namespace NaturalSequenceConsole
                 displayBoard(b);
 
                 //Ask for loop
-                Console.WriteLine("Continue? y/n");
-                String cont = Console.ReadLine();
-                if(!cont.Contains("y"))
-                {
-                    loop = false;
-                }
+                //Console.WriteLine("Continue? y/n");
+                //String cont = Console.ReadLine();
+                //if(!cont.Contains("y"))
+                //{
+                //    loop = false;
+                //}
             }
         }
 
-        private static Space SetCurrentSpace()
+        private static Space SetCurrentSpace(int currentRow, int currentCol)
         {
-            //get x and y coords from user
-            Console.WriteLine("Enter the row");
-            int currentRow = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Enter the column");
-            int currentCol = int.Parse(Console.ReadLine());
-
+            //set space as
             return b.Grid[currentRow, currentCol];
+        }
+
+        private static bool ChooseNextmove()
+        {
+            Console.WriteLine("Select row to move to:");
+            int RowMove = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Select column to move to:");
+            int ColumnMove = int.Parse(Console.ReadLine());
+
+            if(b.Grid[RowMove, ColumnMove].NextLegalMove)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         private static void displayBoard(Board b)
         {
             //print passages on first row
             Console.WriteLine("  +               +               +");
-            
+
             for (int i = 17; i >= 1; i--)
             {
                 for (int j = 0; j < b.Size; j++)
@@ -121,11 +177,11 @@ namespace NaturalSequenceConsole
                             Console.Write("+-");
                         }
                     }
-                    
+
                 }
             }
             //print passages on last row
             Console.WriteLine("  +               +               +");
         }
     }
-}
+    }
