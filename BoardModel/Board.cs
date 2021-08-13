@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace BoardModel
 {
     public class Board
@@ -21,24 +21,21 @@ namespace BoardModel
         public int Size { get; set; }
         public Space[,] Grid {get; set;}
 
-        public void MarkLegalMoves(Space currentSpace, string piece)
+        public void ClearBoard()
         {
-            //Step 1 - clear the board
+            //step 1 - clear board
             for (int i = 0; i < Size; i++)
             {
                 for (int j = 0; j < Size; j++)
                 {
-                    if (i == currentSpace.Row && j == currentSpace.Column)
-                    {
-                        Grid[i, j].Occupied = true;
-                    }
-                    else
-                    {
-                        Grid[i, j].Occupied = false;
-                    }
+                    Grid[i, j].Occupied = false;
                     Grid[i, j].NextLegalMove = false;
                 }
             }
+        }
+
+        public void MarkLegalMoves(Space currentSpace, string piece)
+        {
 
             //Step 2 - find all legal moves for the given piece
             switch (piece)
@@ -55,7 +52,7 @@ namespace BoardModel
                         {
                             Grid[currentSpace.Row, currentSpace.Column + i].NextLegalMove = true;
                         }
-                        
+
                         if (currentSpace.Row - i <= 17 && currentSpace.Row - i >= 1)
                         {
                             Grid[currentSpace.Row - i, currentSpace.Column].NextLegalMove = true;
@@ -217,6 +214,12 @@ namespace BoardModel
 
                     break;
             }
+            //Grid[currentSpace.Row, currentSpace.Column].Occupied = true;
+        }
+
+        public void MarkOccupied(int row, int col)
+        {
+            Grid[row, col].Occupied = true;
         }
     }
 }
